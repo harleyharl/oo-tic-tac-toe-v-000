@@ -90,6 +90,11 @@ def full?
   end
 end
 
+
+def draw?
+full? && !won?
+end
+
 end
 # def turn
 # move(index, player)
