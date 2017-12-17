@@ -24,7 +24,7 @@ def display_board
    puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
  end
 
- def input_to_index(user_input)
+def input_to_index(user_input)
   index = user_input.to_i - 1
 end
 
@@ -51,5 +51,8 @@ end
 #   board
 # end
 
-
+def turn
+move(index, player)
+position_taken?(index)
+valid_move?(index)
 end
