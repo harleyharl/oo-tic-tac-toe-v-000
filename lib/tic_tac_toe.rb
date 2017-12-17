@@ -47,9 +47,9 @@ def valid_move?(index)
 end
 
 def turn_count(board)
-9 - @board.count(" ")
+9 - board.count(" ")
 end
-end 
+end
 # def turn
 # move(index, player)
 # position_taken?(index)
