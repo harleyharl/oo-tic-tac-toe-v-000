@@ -51,6 +51,14 @@ def turn_count
 9 - @board.count(" ")
 end
 
+def current_player(board)
+count = turn_count
+  if count % 2 == 0
+   "X"
+  else
+   "O"
+  end
+end
 
 end
 # def turn
