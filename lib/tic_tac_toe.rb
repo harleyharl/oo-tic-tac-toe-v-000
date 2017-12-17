@@ -73,6 +73,13 @@ def turn
   end
 end
 
+def won?(board)
+  WIN_COMBINATIONS.detect do |winning_arrays|
+  # binding.pry
+  board[winning_arrays[0]] == board[winning_arrays[1]] && board[winning_arrays[1]] == board[winning_arrays[2]] && position_taken?(board, winning_arrays[0]) #because the values at each position - they're all the same
+  end
+end
+
 end
 # def turn
 # move(index, player)
