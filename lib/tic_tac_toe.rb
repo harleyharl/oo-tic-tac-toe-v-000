@@ -40,8 +40,8 @@ end
 
 
 def valid_move?(index)
-  if @board[index].to_i.between?(0, 9)
-    !position_taken?
+  if @board[index].to_i.between?(0, 9) && 
+    !position_taken?(index)
     true
     #  !position_taken?(index)   # (@board[index])
   end
