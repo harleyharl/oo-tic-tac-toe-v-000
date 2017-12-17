@@ -47,6 +47,7 @@ def valid_move?(index)
 end
 
 def turn_count(board)
+binding.pry
 9 - board.count(" ")
 end
 end
