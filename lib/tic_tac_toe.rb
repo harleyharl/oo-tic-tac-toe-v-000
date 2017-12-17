@@ -44,9 +44,6 @@ end
 def valid_move?(index)
   # binding.pry
  index.between?(0, 8) && !position_taken?(index)
-  #   true
-  #   #  !position_taken?(index)   # (@board[index])
-  # end
 end
 
 # def move(board, index, player = "X")
