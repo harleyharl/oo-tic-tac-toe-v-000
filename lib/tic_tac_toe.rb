@@ -25,7 +25,7 @@ def display_board
  end
 
  def input_to_index(user_input)
-  index = user_input.strip.to_i - 1
+  index = user_input.to_i - 1
 end
 
 def move(index, player)
@@ -42,8 +42,8 @@ end
 
 
 def valid_move?(index)
-  binding.pry
- @board[index].between?(0, 9) && !position_taken?(index)
+  # binding.pry
+ @board[index].between?(0, 8) && !position_taken?(index)
   #   true
   #   #  !position_taken?(index)   # (@board[index])
   # end
