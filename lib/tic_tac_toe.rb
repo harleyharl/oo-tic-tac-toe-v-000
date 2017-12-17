@@ -114,10 +114,10 @@ def play
   end
   if won?
     # binding.pry
-  puts "Congratulations #{winner(@board)}!"
+  puts "Congratulations #{winner}!"
   elsif draw?
   puts "Cat's Game!"
-  else false 
+  else false
   end
 end
 
