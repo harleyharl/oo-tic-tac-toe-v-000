@@ -1,3 +1,5 @@
+require "pry"
+
 class TicTacToe
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
@@ -40,6 +42,7 @@ end
 
 
 def valid_move?(index)
+  binding.pry
  @board[index].between?(0, 9) && !position_taken?(index)
   #   true
   #   #  !position_taken?(index)   # (@board[index])
