@@ -48,7 +48,7 @@ end
 
 def turn_count(board)
 binding.pry
-9 - @board.count(" ")
+9 - board.count(" ")
 end
 
 
