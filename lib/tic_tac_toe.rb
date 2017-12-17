@@ -60,6 +60,19 @@ count = turn_count
   end
 end
 
+def turn(board)
+  puts "Please enter 1-9:"
+  user_input = gets.strip
+  index = input_to_index(user_input)
+  if valid_move?(index)
+    token = current_player
+    move(index, token)
+    display_board
+  else
+    turn(board)
+  end
+end
+
 end
 # def turn
 # move(index, player)
