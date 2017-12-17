@@ -95,6 +95,10 @@ def draw?
 full? && !won?
 end
 
+def over?(board)
+full? || won? || draw?
+end
+
 end
 # def turn
 # move(index, player)
