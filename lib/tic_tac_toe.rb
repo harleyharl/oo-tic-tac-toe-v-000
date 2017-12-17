@@ -99,6 +99,16 @@ def over?
 full? || won? || draw?
 end
 
+def winner
+winning_player = ""
+indexes = won?
+  if won? != nil
+   winning_player = @board[indexes[0]]
+   winning_player
+end
+end
+
+
 end
 # def turn
 # move(index, player)
