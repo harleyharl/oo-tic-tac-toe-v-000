@@ -46,11 +46,6 @@ def valid_move?(index)
  index.between?(0, 8) && !position_taken?(index)
 end
 
-# def move(board, index, player = "X")
-#   @board.to_s[index] = player
-#   board
-# end
-
 def turn_count(board)
 9 - @board.count(" ")
 end
