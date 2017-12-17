@@ -117,6 +117,7 @@ def play
   puts "Congratulations #{winner(@board)}!"
   elsif draw?
   puts "Cat's Game!"
+  else false 
   end
 end
 
