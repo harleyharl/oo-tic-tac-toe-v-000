@@ -43,7 +43,7 @@ end
 
 def valid_move?(index)
   # binding.pry
- @board[index].between?(0, 8) && !position_taken?(index)
+ index.between?(0, 8) && !position_taken?(index)
   #   true
   #   #  !position_taken?(index)   # (@board[index])
   # end
