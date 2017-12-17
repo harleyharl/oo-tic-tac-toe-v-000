@@ -80,6 +80,16 @@ def won?
   end
 end
 
+def full?
+@board.all? do |token|
+  if token == "X" || token == "O"
+    true
+  else
+    false
+    end
+  end
+end
+
 end
 # def turn
 # move(index, player)
